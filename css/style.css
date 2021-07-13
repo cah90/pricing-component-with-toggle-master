@@ -1,0 +1,116 @@
+:root {
+  --primary-light-purple: #a3a8f0;
+  --primary-dark-purple: #696fdd;
+  --lighter-grayish-blue: #f6f6fe;
+  --light-grayish-blue: #b3b5c6;
+  --grayish-blue: #6e728e;
+  --dark-grayish-blue: #494c5f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--grayish-blue);
+}
+
+main {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+/* PRICING COMPONENT */
+.pricing {
+  text-align: center;
+  padding: 6.4rem 6.8rem 8rem;
+}
+
+.pricing > h1 {
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  margin-bottom: 4rem;
+}
+
+.pricing__toggler {
+  display: flex;
+  align-items: center;
+}
+
+.pricing__toggler > span {
+  opacity: 0.5;
+  line-height: 2.8rem;
+}
+
+/* TOGGLE COMPONENT */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--primary-light-purple) 0%, var(--primary-dark-purple) 100%);
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 16px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+/* FOOTER */
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
