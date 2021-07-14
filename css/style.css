@@ -90,7 +90,7 @@ body {
 }
 
 input:checked + .slider:before {
-  transform: translateX(22px);
+  transform: translateX(23px);
 }
 
 /* CARDS COMPONENT */
@@ -171,26 +171,36 @@ input:checked + .slider:before {
   .cards {
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 50vh;
   }
 
   .card {
     margin: 0;
-    padding: 2rem;
     width: 350px;
   }
 
   .card-left {
     border-radius: 10px 0 0 10px;
+    position: absolute;
+    margin-left: -650px;
   }
 
   .card-right {
     border-radius: 0 10px 10px 0;
+    position: absolute;
+    margin-right: -650px;
   }
 
   .card-middle {
     background: var(--gradient);
     color: #fff;
-    z-index: 9;
+    z-index: 1;
+    margin-top: -30px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .card-middle .card__price,
