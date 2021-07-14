@@ -1,6 +1,5 @@
 :root {
-  --primary-light-purple: #a3a8f0;
-  --primary-dark-purple: #696fdd;
+  --gradient: linear-gradient(135deg, #a3a8f0 0%, #696fdd 100%);
   --lighter-grayish-blue: #f6f6fe;
   --light-grayish-blue: #b3b5c6;
   --grayish-blue: #6e728e;
@@ -12,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  text-decoration: none;
 }
 
 html {
@@ -22,6 +22,7 @@ body {
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   color: var(--grayish-blue);
+  background-color: #f2f2f2;
 }
 
 main {
@@ -75,7 +76,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, var(--primary-light-purple) 0%, var(--primary-dark-purple) 100%);
+  background: var(--gradient);
   transition: .4s;
   border-radius: 16px;
 }
@@ -94,6 +95,69 @@ main {
 
 input:checked + .slider:before {
   transform: translateX(22px);
+}
+
+/* CARDS COMPONENT */
+.card {
+  background-color: #fff;
+  max-width: 327px;
+  margin: 0 auto 3rem;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+
+.card__plan {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.price__symbol {
+  font-size: 4rem;
+  letter-spacing:-1.2px;
+  line-height: 4.9px;
+  margin-right: 0.7rem;
+}
+
+.card__price {
+  font-size: 7.2rem;
+  line-height: 7.1rem;
+  letter-spacing: -2.16px;
+  color: var(--dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.card__items {
+  list-style-type: none;
+  line-height: 2.8rem;
+}
+
+.card__items > li {
+  padding: 1rem 0;
+  border-top: 1px solid hsla(232, 13%, 49%, 25%);
+}
+
+.card__items > li:last-child {
+  border-bottom: 1px solid hsla(232, 13%, 49%, 25%);
+  margin-bottom: 3rem;
+}
+
+.btn {
+  background: var(--gradient);
+  display: inline-block;
+  width:100%;
+  padding: 1.4rem 0;
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 1.39px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
 }
 
 /* FOOTER */
