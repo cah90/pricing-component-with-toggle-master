@@ -25,11 +25,6 @@ body {
   background-color: #f2f2f2;
 }
 
-main {
-  max-width: 375px;
-  margin: 0 auto;
-}
-
 /* PRICING COMPONENT */
 .pricing {
   text-align: center;
@@ -45,6 +40,7 @@ main {
 .pricing__toggler {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .pricing__toggler > span {
@@ -122,7 +118,7 @@ input:checked + .slider:before {
 }
 
 .card__price {
-  font-size: 7.2rem;
+  font-size: 7rem;
   line-height: 7.1rem;
   letter-spacing: -2.16px;
   color: var(--dark-grayish-blue);
@@ -164,8 +160,67 @@ input:checked + .slider:before {
 .attribution { 
   font-size: 11px; 
   text-align: center; 
+  margin-top: 1rem;
 }
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 967px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 0;
+    padding: 2rem;
+    width: 350px;
+  }
+
+  .card-left {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card-right {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card-middle {
+    background: var(--gradient);
+    color: #fff;
+    z-index: 9;
+  }
+
+  .card-middle .card__price,
+  .card-middle .card__price-symbol {
+    color: #fff;
+  }
+
+  .card-middle .card__items > li {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  .card-middle .card__items > li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .btn__card-middle {
+    background: #fff;
+    color: #696fdd;
+  }
+
+  .btn__card-middle:hover {
+    background: var(--gradient);
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .btn__card-left:hover,
+  .btn__card-right:hover {
+    background: #fff;
+    color: #696fdd;
+    border: 1px solid #696fdd;
+  }
 }
