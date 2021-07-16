@@ -21,7 +21,7 @@ Users should be able to:
 - Control the toggle with both their mouse/trackpad and their keyboard
 ### Screenshot
 
-![](./screenshot/desktop-shot.png)
+![](./screenshot/screenshot.png)
 ### Links
 
 - Solution URL: [GitHub](https://github.com/cah90/pricing-component-with-toggle-master)
