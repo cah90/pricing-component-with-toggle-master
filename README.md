@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/cah90/pricing-component-with-toggle-master)
-- Live Site URL: [GitHub Pages](#)
+- Live Site URL: [GitHub Pages](https://cah90.github.io/pricing-component-with-toggle-master/)
 
 ## My process
 

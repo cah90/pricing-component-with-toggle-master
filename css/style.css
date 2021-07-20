@@ -166,6 +166,8 @@ input:checked + .slider:before {
   text-transform: uppercase;
   font-size: 1.3rem;
   line-height: 1.6rem;
+  border: 1px solid #fff;
+  transition: all 1s ease;
 }
 
 /* FOOTER */
@@ -236,7 +238,6 @@ input:checked + .slider:before {
   .btn__card-middle:hover {
     background: var(--gradient);
     color: #fff;
-    border: 1px solid #fff;
   }
 
   .btn__card-left:hover,
